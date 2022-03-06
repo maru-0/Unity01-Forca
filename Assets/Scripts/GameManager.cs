@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
     /* Atualiza GameObject vitoriasConsecutivas para exibir na tela*/
     void UpdateVitoriasConsecutivas()
     {
-        GameObject.Find("vitoriasConsecutivas").GetComponent<Text>().text = "Vitorias consecutivas: " + PlayerPrefs.GetInt("winStreak");
+        GameObject.Find("vitoriasConsecutivas").GetComponent<Text>().text = "Win Streak: " + PlayerPrefs.GetInt("winStreak");
     }
 
     /* Setta o atributo "palavrasOcultas" com as palavras lidas de um arquivo*/
